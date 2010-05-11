@@ -3,16 +3,38 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 45;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		213C693211990E6600BB9405 /* NSObject+LTAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 213C693011990E6600BB9405 /* NSObject+LTAdditions.m */; };
+		213C693311990E6600BB9405 /* NSObject+LTAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 213C693111990E6600BB9405 /* NSObject+LTAdditions.h */; };
+		214631921198CE9400BD510D /* LTTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 214631901198CE9400BD510D /* LTTableViewCell.h */; };
+		214631931198CE9400BD510D /* LTTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 214631911198CE9400BD510D /* LTTableViewCell.m */; };
+		214631A01198D6C900BD510D /* LTTableViewCellCompositeView.h in Headers */ = {isa = PBXBuildFile; fileRef = 2146319E1198D6C900BD510D /* LTTableViewCellCompositeView.h */; };
+		214631A11198D6C900BD510D /* LTTableViewCellCompositeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2146319F1198D6C900BD510D /* LTTableViewCellCompositeView.m */; };
+		2146323B1198ECF800BD510D /* LTKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 214632391198ECF800BD510D /* LTKit.h */; };
+		219F7B0011991EB6007BA426 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 219F7AFF11991EB6007BA426 /* CoreGraphics.framework */; };
+		219F7B2711991ED5007BA426 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 219F7B2611991ED5007BA426 /* QuartzCore.framework */; };
+		21F43CE3119A0F4400B03342 /* UIColor+LTAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 21F43CE1119A0F4400B03342 /* UIColor+LTAdditions.h */; };
+		21F43CE4119A0F4400B03342 /* UIColor+LTAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 21F43CE2119A0F4400B03342 /* UIColor+LTAdditions.m */; };
 		AA747D9F0F9514B9006C5449 /* LTKit_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = AA747D9E0F9514B9006C5449 /* LTKit_Prefix.pch */; };
 		AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		AA747D9E0F9514B9006C5449 /* LTKit_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTKit_Prefix.pch; sourceTree = SOURCE_ROOT; };
+		213C693011990E6600BB9405 /* NSObject+LTAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+LTAdditions.m"; sourceTree = "<group>"; };
+		213C693111990E6600BB9405 /* NSObject+LTAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSObject+LTAdditions.h"; path = "LTKit/NSObject+LTAdditions.h"; sourceTree = SOURCE_ROOT; };
+		214631901198CE9400BD510D /* LTTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LTTableViewCell.h; path = LTKit/LTTableViewCell.h; sourceTree = SOURCE_ROOT; };
+		214631911198CE9400BD510D /* LTTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTTableViewCell.m; sourceTree = "<group>"; };
+		2146319E1198D6C900BD510D /* LTTableViewCellCompositeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LTTableViewCellCompositeView.h; path = LTKit/LTTableViewCellCompositeView.h; sourceTree = SOURCE_ROOT; };
+		2146319F1198D6C900BD510D /* LTTableViewCellCompositeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTTableViewCellCompositeView.m; sourceTree = "<group>"; };
+		214632391198ECF800BD510D /* LTKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LTKit.h; path = LTKit/LTKit.h; sourceTree = SOURCE_ROOT; };
+		219F7AFF11991EB6007BA426 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		219F7B2611991ED5007BA426 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		21F43CE1119A0F4400B03342 /* UIColor+LTAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIColor+LTAdditions.h"; path = "LTKit/UIColor+LTAdditions.h"; sourceTree = SOURCE_ROOT; };
+		21F43CE2119A0F4400B03342 /* UIColor+LTAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+LTAdditions.m"; sourceTree = "<group>"; };
+		AA747D9E0F9514B9006C5449 /* LTKit_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTKit_Prefix.pch; sourceTree = "<group>"; };
 		AACBBE490F95108600F1A2B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D2AAC07E0554694100DB518D /* libLTKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLTKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -23,6 +45,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */,
+				219F7B0011991EB6007BA426 /* CoreGraphics.framework in Frameworks */,
+				219F7B2711991ED5007BA426 /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +64,7 @@
 		0867D691FE84028FC02AAC07 /* LTKit */ = {
 			isa = PBXGroup;
 			children = (
+				213C692F11990E5100BB9405 /* Classes */,
 				08FB77AEFE84172EC02AAC07 /* Classes */,
 				32C88DFF0371C24200C91783 /* Other Sources */,
 				0867D69AFE84028FC02AAC07 /* Frameworks */,
@@ -51,7 +76,9 @@
 		0867D69AFE84028FC02AAC07 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				219F7AFF11991EB6007BA426 /* CoreGraphics.framework */,
 				AACBBE490F95108600F1A2B1 /* Foundation.framework */,
+				219F7B2611991ED5007BA426 /* QuartzCore.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -59,8 +86,24 @@
 		08FB77AEFE84172EC02AAC07 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				214632391198ECF800BD510D /* LTKit.h */,
+				214631901198CE9400BD510D /* LTTableViewCell.h */,
+				214631911198CE9400BD510D /* LTTableViewCell.m */,
+				2146319E1198D6C900BD510D /* LTTableViewCellCompositeView.h */,
+				2146319F1198D6C900BD510D /* LTTableViewCellCompositeView.m */,
 			);
-			name = Classes;
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		213C692F11990E5100BB9405 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				213C693111990E6600BB9405 /* NSObject+LTAdditions.h */,
+				213C693011990E6600BB9405 /* NSObject+LTAdditions.m */,
+				21F43CE1119A0F4400B03342 /* UIColor+LTAdditions.h */,
+				21F43CE2119A0F4400B03342 /* UIColor+LTAdditions.m */,
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 		32C88DFF0371C24200C91783 /* Other Sources */ = {
@@ -68,7 +111,7 @@
 			children = (
 				AA747D9E0F9514B9006C5449 /* LTKit_Prefix.pch */,
 			);
-			name = "Other Sources";
+			path = "Other Sources";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -79,6 +122,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA747D9F0F9514B9006C5449 /* LTKit_Prefix.pch in Headers */,
+				214631921198CE9400BD510D /* LTTableViewCell.h in Headers */,
+				214631A01198D6C900BD510D /* LTTableViewCellCompositeView.h in Headers */,
+				2146323B1198ECF800BD510D /* LTKit.h in Headers */,
+				213C693311990E6600BB9405 /* NSObject+LTAdditions.h in Headers */,
+				21F43CE3119A0F4400B03342 /* UIColor+LTAdditions.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -107,8 +155,12 @@
 /* Begin PBXProject section */
 		0867D690FE84028FC02AAC07 /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				ORGANIZATIONNAME = LucasTizma;
+			};
 			buildConfigurationList = 1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "LTKit" */;
-			compatibilityVersion = "Xcode 3.1";
+			compatibilityVersion = "Xcode 3.2";
 			hasScannedForEncodings = 1;
 			mainGroup = 0867D691FE84028FC02AAC07 /* LTKit */;
 			productRefGroup = 034768DFFF38A50411DB9C8B /* Products */;
@@ -125,6 +177,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				214631931198CE9400BD510D /* LTTableViewCell.m in Sources */,
+				214631A11198D6C900BD510D /* LTTableViewCellCompositeView.m in Sources */,
+				213C693211990E6600BB9405 /* NSObject+LTAdditions.m in Sources */,
+				21F43CE4119A0F4400B03342 /* UIColor+LTAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,7 +199,7 @@
 				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = LTKit_Prefix.pch;
+				GCC_PREFIX_HEADER = "Other Sources/LTKit_Prefix.pch";
 				INSTALL_PATH = /usr/local/lib;
 				PRODUCT_NAME = LTKit;
 			};
@@ -157,7 +213,7 @@
 				DSTROOT = /tmp/LTKit.dst;
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = LTKit_Prefix.pch;
+				GCC_PREFIX_HEADER = "Other Sources/LTKit_Prefix.pch";
 				INSTALL_PATH = /usr/local/lib;
 				PRODUCT_NAME = LTKit;
 			};
@@ -171,6 +227,7 @@
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = .;
 				OTHER_LDFLAGS = "-ObjC";
 				PREBINDING = NO;
 				SDKROOT = iphoneos4.0;
@@ -184,6 +241,7 @@
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = .;
 				OTHER_LDFLAGS = "-ObjC";
 				PREBINDING = NO;
 				SDKROOT = iphoneos4.0;
