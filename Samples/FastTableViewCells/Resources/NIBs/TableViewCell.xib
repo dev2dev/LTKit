@@ -262,7 +262,7 @@
 				<object class="NSMutableArray" key="dict.values">
 					<bool key="EncodedWithXMLCoder">YES</bool>
 					<string>UIResponder</string>
-					<string>TableCell</string>
+					<string>TableViewCell</string>
 					<string>{{894, 895}, {320, 61}}</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<boolean value="YES"/>
@@ -294,7 +294,7 @@
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">
 				<bool key="EncodedWithXMLCoder">YES</bool>
 				<object class="IBPartialClassDescription">
-					<string key="className">TableCell</string>
+					<string key="className">TableViewCell</string>
 					<string key="superclassName">LTTableViewCell</string>
 					<object class="NSMutableDictionary" key="outlets">
 						<bool key="EncodedWithXMLCoder">YES</bool>
@@ -344,7 +344,7 @@
 					</object>
 					<object class="IBClassDescriptionSource" key="sourceIdentifier">
 						<string key="majorKey">IBProjectSource</string>
-						<string key="minorKey">Classes/TableCell.h</string>
+						<string key="minorKey">Classes/TableViewCell.h</string>
 					</object>
 				</object>
 			</object>

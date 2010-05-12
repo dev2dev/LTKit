@@ -12,8 +12,8 @@
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
 		214631DF1198DCBE00BD510D /* libLTKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 214631DE1198DCBC00BD510D /* libLTKit.a */; };
-		214632421198ED4300BD510D /* TableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 214632411198ED4300BD510D /* TableCell.xib */; };
-		214632461198ED6000BD510D /* TableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 214632451198ED6000BD510D /* TableCell.m */; };
+		214632421198ED4300BD510D /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 214632411198ED4300BD510D /* TableViewCell.xib */; };
+		214632461198ED6000BD510D /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 214632451198ED6000BD510D /* TableViewCell.m */; };
 		21F43CD3119A0D5000B03342 /* lucas_sprite.png in Resources */ = {isa = PBXBuildFile; fileRef = 21F43CD0119A0D5000B03342 /* lucas_sprite.png */; };
 		21F43CD4119A0D5000B03342 /* ness_sprite.png in Resources */ = {isa = PBXBuildFile; fileRef = 21F43CD1119A0D5000B03342 /* ness_sprite.png */; };
 		21F43CD5119A0D5000B03342 /* ninten_sprite.png in Resources */ = {isa = PBXBuildFile; fileRef = 21F43CD2119A0D5000B03342 /* ninten_sprite.png */; };
@@ -45,9 +45,9 @@
 		1D6058910D05DD3D006BFB54 /* FastTableViewCells.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FastTableViewCells.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		214631D91198DCBC00BD510D /* LTKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = LTKit.xcodeproj; path = ../../LTKit.xcodeproj; sourceTree = SOURCE_ROOT; };
-		214632411198ED4300BD510D /* TableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableCell.xib; sourceTree = "<group>"; };
-		214632441198ED6000BD510D /* TableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableCell.h; sourceTree = "<group>"; };
-		214632451198ED6000BD510D /* TableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableCell.m; sourceTree = "<group>"; };
+		214632411198ED4300BD510D /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
+		214632441198ED6000BD510D /* TableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewCell.h; sourceTree = "<group>"; };
+		214632451198ED6000BD510D /* TableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewCell.m; sourceTree = "<group>"; };
 		21F43CD0119A0D5000B03342 /* lucas_sprite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lucas_sprite.png; sourceTree = "<group>"; };
 		21F43CD1119A0D5000B03342 /* ness_sprite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ness_sprite.png; sourceTree = "<group>"; };
 		21F43CD2119A0D5000B03342 /* ninten_sprite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ninten_sprite.png; sourceTree = "<group>"; };
@@ -81,8 +81,8 @@
 				28C286E00D94DF7D0034E888 /* RootViewController.m */,
 				1D3623240D0F684500981E51 /* FastTableViewCellsAppDelegate.h */,
 				1D3623250D0F684500981E51 /* FastTableViewCellsAppDelegate.m */,
-				214632441198ED6000BD510D /* TableCell.h */,
-				214632451198ED6000BD510D /* TableCell.m */,
+				214632441198ED6000BD510D /* TableViewCell.h */,
+				214632451198ED6000BD510D /* TableViewCell.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -130,7 +130,7 @@
 		214632331198ECCD00BD510D /* NIBs */ = {
 			isa = PBXGroup;
 			children = (
-				214632411198ED4300BD510D /* TableCell.xib */,
+				214632411198ED4300BD510D /* TableViewCell.xib */,
 			);
 			path = NIBs;
 			sourceTree = "<group>";
@@ -257,7 +257,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				214632421198ED4300BD510D /* TableCell.xib in Resources */,
+				214632421198ED4300BD510D /* TableViewCell.xib in Resources */,
 				21F43CD3119A0D5000B03342 /* lucas_sprite.png in Resources */,
 				21F43CD4119A0D5000B03342 /* ness_sprite.png in Resources */,
 				21F43CD5119A0D5000B03342 /* ninten_sprite.png in Resources */,
@@ -274,7 +274,7 @@
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
 				1D3623260D0F684500981E51 /* FastTableViewCellsAppDelegate.m in Sources */,
 				28C286E10D94DF7D0034E888 /* RootViewController.m in Sources */,
-				214632461198ED6000BD510D /* TableCell.m in Sources */,
+				214632461198ED6000BD510D /* TableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

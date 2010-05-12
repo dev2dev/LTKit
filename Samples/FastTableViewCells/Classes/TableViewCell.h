@@ -1,5 +1,5 @@
 //
-//  TableCell.h
+//  TableViewCell.h
 //  FastTableViewCells
 //
 //  Created by Michael Potter on 5/10/2010.
@@ -8,7 +8,7 @@
 
 #import "LTKit/LTTableViewCell.h"
 
-@interface TableCell : LTTableViewCell
+@interface TableViewCell : LTTableViewCell
 {
 	@private
 
@@ -16,19 +16,11 @@
 	UILabel * firstLabel_;
 	UILabel * secondLabel_;
 	UILabel * thirdLabel_;
-//	NSString * imageName_;
-//	NSString * firstLabelText_;
-//	NSString * secondLabelText_;
-//	NSString * thirdLabelText_;
 }
 
 @property (nonatomic, retain) IBOutlet UIImageView * imageView;
 @property (nonatomic, retain) IBOutlet UILabel * firstLabel;
 @property (nonatomic, retain) IBOutlet UILabel * secondLabel;
 @property (nonatomic, retain) IBOutlet UILabel * thirdLabel;
-//@property (nonatomic, copy) NSString * imageName;
-//@property (nonatomic, copy) NSString * firstLabelText;
-//@property (nonatomic, copy) NSString * secondLabelText;
-//@property (nonatomic, copy) NSString * thirdLabelText;
 
 @end

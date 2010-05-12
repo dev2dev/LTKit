@@ -8,7 +8,7 @@
 
 #import "RootViewController.h"
 #import "LTKit/LTKit.h"
-#import "TableCell.h"
+#import "TableViewCell.h"
 
 @implementation RootViewController
 
@@ -33,13 +33,13 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString * tableViewCellIdentifier = @"TableCell";
+    static NSString * tableViewCellIdentifier = @"TableViewCell";
 
-    TableCell * cell = (TableCell *)[tableView dequeueReusableCellWithIdentifier:tableViewCellIdentifier];
+    TableViewCell * cell = (TableViewCell *)[tableView dequeueReusableCellWithIdentifier:tableViewCellIdentifier];
 
     if (cell == nil)
     {
-        cell = (TableCell *)[[[NSBundle mainBundle] loadNibNamed:tableViewCellIdentifier owner:self options:nil] objectAtIndex:0];
+        cell = (TableViewCell *)[[[NSBundle mainBundle] loadNibNamed:tableViewCellIdentifier owner:self options:nil] objectAtIndex:0];
     }
 
 	if ((indexPath.row % 3) == 0)
