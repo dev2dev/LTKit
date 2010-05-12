@@ -54,20 +54,18 @@ Table view cells that are heavy-laden with subviews, especially those that make 
 #### Highlights ####
 
   - Subclassing `LTTableViewCell` allows a class to make use of Core Graphics to composite its basic subviews into a single, efficient view.
-    - Currently, `LTTableViewCell`'s compositing view class, `LTTableViewCellCompositeView`, supports drawing the following `UIView` subclasses: `UILabel`s and `UIImageView`.
-    - Support for hybridizing `LTTableViewCell` is planned. This will allow for animated views (e.g., `UIActivityIndicatorView`) and `UIControl` subclasses (e.g., `UITextField`) to exist independent of the composite view.
+  - Currently, `LTTableViewCell`'s compositing view class, `LTTableViewCellCompositeView`, supports drawing the following `UIView` subclasses: `UILabel`s and `UIImageView`.
+  - Support for hybridizing `LTTableViewCell` is planned. This will allow for animated views (e.g., `UIActivityIndicatorView`) and `UIControl` subclasses (e.g., `UITextField`) to exist independent of the composite view.
   - Use Interface Builder to easily configure the myriad of properties for each table view cell and its subviews.
   - Only one method, `-drawCompositeView`, needs to be called on your table view cells before returning them within the body of `-tableView:cellForRowAtIndexPath:`.
-    - Omitting the call to `-drawCompositeView` allows your table view cells to function exactly as they would normally, relying on the iPhone SDK's default rendering and layout of table view cells.
+  - Omitting the call to `-drawCompositeView` allows your table view cells to function exactly as they would normally, relying on the iPhone SDK's default rendering and layout of table view cells.
 
 <a name="sample-project-fasttableviewcells"></a>
 #### Sample Project: FastTableViewCells ####
 
-*Status: Work-in-progress*
-
-*Main Classes Used: `LTTableViewCell`*
-
-*Location: `LTKit/Samples/FastTableViewCell`*
+*Status: Work-in-progress*  
+*Main Classes Used: `LTTableViewCell`*  
+*Location: [LTKit/Samples/FastTableViewCell][6]*
 
 This sample project simply constructs a table view containing a very large number of repeating table view cells. The table view cell, called `TableViewCell`, contains three `UILabel`s and one `UIImageView`. Its corresponding NIB, also called `TableViewCell` has a fairly basic layout. It makes use of `UIView`'s `autoresizingMask` property to define how its subviews will adjust to changes to its frame. As a result, landscape device orientation is supported as well. Removing or commenting out the call to `-drawCompositeView` in `RootViewController` will cause the table view cells to be rendered as usual.
 
@@ -75,15 +73,15 @@ This sample project simply constructs a table view containing a very large numbe
 
 Copyright 2010 Michael Shannon Potter
 
-LucasTizma
-[www.lucastizma.com][3]
+LucasTizma  
+[www.lucastizma.com][3]  
 [lucastizma@lucastizma.com][4] (E-mail/AIM)
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
 You may obtain a copy of the License at
 
-http://www.apache.org/licenses/LICENSE-2.0
+[http://www.apache.org/licenses/LICENSE-2.0][5]
 
 Unless required by applicable law or agreed to in writing, software
 distributed under the License is distributed on an "AS IS" BASIS,
@@ -96,3 +94,5 @@ limitations under the License.
   [2]: http://www.atebits.com/tweetie-iphone/ "Tweetie 2 for iPhone"
   [3]: http://www.lucastizma.com "www.lucastizma.com"
   [4]: mailto:lucastizma@lucastizma.com "lucastizma@lucastizma.com"
+  [5]: http://www.apache.org/licenses/LICENSE-2.0 "http://www.apache.org/licenses/LICENSE-2.0"
+  [6]: http://github.com/LucasTizma/LTKit/tree/master/Samples/FastTableViewCells/ "LTKit/Samples/FastTableViewCell"
