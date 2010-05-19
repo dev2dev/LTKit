@@ -1,9 +1,21 @@
 //
-//  LTTableViewCellCompositeView.m
-//  LTKit
+//  Copyright 2010 Michael Shannon Potter
 //
-//  Created by Michael Potter on 5/10/10.
-//  Copyright 2010 LucasTizma. All rights reserved.
+//  LucasTizma
+//  www.lucastizma.com
+//  lucastizma@lucastizma.com (E-mail/AIM)
+//
+//  Licensed under the Apache License, Version 2.0 (the "License");
+//  you may not use this file except in compliance with the License.
+//  You may obtain a copy of the License at
+//
+//      http://www.apache.org/licenses/LICENSE-2.0
+//
+//  Unless required by applicable law or agreed to in writing, software
+//  distributed under the License is distributed on an "AS IS" BASIS,
+//  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+//  See the License for the specific language governing permissions and
+//  limitations under the License.
 //
 
 #import "LTKit/LTTableViewCellCompositeView.h"
@@ -17,32 +29,37 @@
 #pragma mark -
 #pragma mark LTTableViewCellContentView Methods
 
-- (id)initWithFrame:(CGRect)frame tableViewCell:(LTTableViewCell *)tableViewCell
+- (id)initWithTableViewCell:(LTTableViewCell *)tableViewCell;
 {
-	self = [self initWithFrame:frame];
+	self = [super initWithFrame:CGRectZero];
 
-	if (self != nil) {
+	if (self != nil)
+	{
 		self.tableViewCell = tableViewCell;
-		self.backgroundColor = self.tableViewCell.backgroundColor;
-	}
-
-	return self;
-}
-
-#pragma mark -
-#pragma mark UIView Methods
-
-- (id)initWithFrame:(CGRect)frame
-{
-	self = [super initWithFrame:frame];
-
-	if (self != nil) {
-		self.tableViewCell = nil;
 		self.opaque = YES;
 	}
 
 	return self;
 }
+
+- (void)setTableViewCell:(LTTableViewCell *)tableViewCell
+{
+	if (tableViewCell != self.tableViewCell)
+	{
+		[tableViewCell retain];
+		[tableViewCell_ release];
+		tableViewCell_ = tableViewCell;
+
+		if (self.tableViewCell != nil)
+		{
+			self.frame = self.tableViewCell.contentView.bounds;
+			self.backgroundColor = self.tableViewCell.backgroundColor;
+		}
+	}
+}
+
+#pragma mark -
+#pragma mark UIView Methods
 
 - (void)drawRect:(CGRect)rect
 {
@@ -71,7 +88,7 @@
 
 - (id)init
 {
-	return [self initWithFrame:CGRectZero];
+	return [self initWithTableViewCell:nil];
 }
 
 - (void)dealloc
