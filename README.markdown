@@ -5,6 +5,7 @@
 
 Nontrivial changes to this repository will be logged here.
 
+- **05/18/2010 08:56 PM**: Began using [Doxygen][7] for code commenting.
 - **05/11/2010 07:48 PM**: <a href="#automatic-fast-table-view-cell-rendering">Fast, smooth table view cell rendering</a> with corresponding sample project: <a href="#sample-project-fasttableviewcells">FastTableViewCells</a>
 - **05/10/2010 07:20 PM**: Repository creation.
 
@@ -26,7 +27,7 @@ I very strongly believe that good apps require beautiful, sensible design. Apple
 
 **LTKit** has some lofty goals. At this point, I don't even know how or if some of them will be achieved, but after all, what's the point (or fun) in making goals devoid of any challenge?
 
-### General Goals ###
+### Guidelines ###
 
   - **Pristine Code**: Consistent coding style, best-practice development, and self-documentation.
   - **Highly Generic**: Code that is as broad and reusable as possible.
@@ -35,9 +36,9 @@ I very strongly believe that good apps require beautiful, sensible design. Apple
   - **Plenty of Examples**: The creation of sample projects to showcase each major feature with as much variety as possible.
   - **Current**: Always making use of the latest official SDK and third-party library offerings. (As of 05/11/2010, **LTKit** is targeting iPhone OS 4.0.)
 
-### Specific Goals ###
+### Goals ###
 
-  - **Advanced UI Features**: Similar to Three20's collection of simplified, advanced views and controllers (e.g., `TTModel`, `TTModelViewController`, `TTTableItem`), **LTKit** will attempt to develop new views, new ways of interacting with existing views, and a means of standardizing UX and design practices.
+  - **Advanced UI Features**: Similar to Three20's collection of simplified, advanced views and controllers (e.g., `TTModelViewController`, `TTTableItem`), **LTKit** will attempt to develop new views, new ways of interacting with existing views, and a means of standardizing UX and design practices.
   - **Fluid Layout**: Managing complicated view layouts can be difficult, error-prone, and tedious. Although I hate to admit it, Android's HTML-like layout allows for views to automatically position and lay themselves out. The iPhone OS SDK has only rudimentary support for these sorts of features. It would be much more convenient to give views the capability to intelligently and automatically determine how their subviews are positioned and sized.
   - **Advanced Debug Logging**: Especially for things like view hierarchies, a means for automatically generating `NSLog` statements that contain a variety of useful debugging statements would be extremely helpful. A bridge to a basic Cocoa desktop application that can read, parse, and display this debug output in an organized, easy-to-read manner might also be useful.
   - **UI Testing**: The incorporation of some form of highly-automated, highly-configurable UI testing is crucial as apps contain more and more complicated, feature-rich UI components.
@@ -49,12 +50,12 @@ I very strongly believe that good apps require beautiful, sensible design. Apple
 
 *Status: Work-in-progress*
 
-Table view cells that are heavy-laden with subviews, especially those that make use of transparency, result in choppy table view scrolling. While it is possible to composite subviews into a single subview using Core Graphics drawing, this is tedious and must be customized for each table view cell. Given certain (reasonable) constraints, it is possible to automate this compositing process using NIBs as references for laying out these composited views.
+Table view cells that are heavy-laden with subviews, especially those that make use of transparency, result in choppy table view scrolling. While it is possible to composite subviews into a single subview using Core Graphics drawing, this is tedious and must be customized for each table view cell. Given certain (reasonable) constraints, it is possible to automate this compositing process using nibs as references for laying out these composited views.
 
 #### Highlights ####
 
   - Subclassing `LTTableViewCell` allows a class to make use of Core Graphics to composite its basic subviews into a single, efficient view.
-  - Currently, `LTTableViewCell`'s compositing view class, `LTTableViewCellCompositeView`, supports drawing the following `UIView` subclasses: `UILabel`s and `UIImageView`.
+  - Currently, `LTTableViewCell`'s compositing view class, `LTTableViewCellCompositeView`, supports drawing the following `UIView` subclasses: `UILabel` and `UIImageView`.
   - Support for hybridizing `LTTableViewCell` is planned. This will allow for animated views (e.g., `UIActivityIndicatorView`) and `UIControl` subclasses (e.g., `UITextField`) to exist independent of the composite view.
   - Use Interface Builder to easily configure the myriad of properties for each table view cell and its subviews.
   - Only one method, `-drawCompositeView`, needs to be called on your table view cells before returning them within the body of `-tableView:cellForRowAtIndexPath:`.
@@ -67,7 +68,7 @@ Table view cells that are heavy-laden with subviews, especially those that make 
 *Main Classes Used: `LTTableViewCell`*  
 *Location: [LTKit/Samples/FastTableViewCell][6]*
 
-This sample project simply constructs a table view containing a very large number of repeating table view cells. The table view cell, called `TableViewCell`, contains three `UILabel`s and one `UIImageView`. Its corresponding NIB, also called `TableViewCell` has a fairly basic layout. It makes use of `UIView`'s `autoresizingMask` property to define how its subviews will adjust to changes to its frame. As a result, landscape device orientation is supported as well. Removing or commenting out the call to `-drawCompositeView` in `RootViewController` will cause the table view cells to be rendered as usual.
+This sample project simply constructs a table view containing a very large number of repeating table view cells. The table view cell, called `TableViewCell`, contains three `UILabel`s and one `UIImageView`. Its corresponding nib, also called `TableViewCell` has a fairly basic layout. It makes use of `UIView`'s `autoresizingMask` property to define how its subviews will adjust to changes to its frame. As a result, landscape device orientation is supported as well. Removing or commenting out the call to `-drawCompositeView` in `RootViewController` will cause the table view cells to be rendered as usual.
 
 ## License ##
 
@@ -96,3 +97,4 @@ limitations under the License.
   [4]: mailto:lucastizma@lucastizma.com "lucastizma@lucastizma.com"
   [5]: http://www.apache.org/licenses/LICENSE-2.0 "http://www.apache.org/licenses/LICENSE-2.0"
   [6]: http://github.com/LucasTizma/LTKit/tree/master/Samples/FastTableViewCells/ "LTKit/Samples/FastTableViewCell"
+  [7]: http://www.stack.nl/~dimitri/doxygen/ "Doxygen"
