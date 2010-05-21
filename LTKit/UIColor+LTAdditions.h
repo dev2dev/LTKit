@@ -37,9 +37,9 @@
 ///
 /// Creates a <tt>UIColor</tt> whose red, green, and blue values are within the range [0.0, 255.0].
 ///
-/// <tt>UIColor</tt> has a constructor called <tt>-initWithRed:green:blue:alpha:</tt> that accepts its color component
-/// parameters as percentages (i.e., between the values 0.0 and 1.0). This method transforms its parameters to the correct
-/// percentages and calls <tt>-initWithRed:green:blue:alpha:</tt> using them. An alpha value of 1.0 is used.
+/// <tt>UIColor</tt> has an initializer called <tt>-initWithRed:green:blue:alpha:</tt> that accepts its color component parameters as percentages (i.e., between
+/// the values 0.0 and 1.0). This method transforms its parameters to the correct percentages and calls <tt>-initWithRed:green:blue:alpha:</tt> using them. An
+/// alpha value of 1.0 is used.
 ///
 /// @param red		the red value of the color specified as a <tt>CGFloat</tt> between 0.0 and 255.0
 /// @param green	the green value of the color specified as a <tt>CGFloat</tt> between 0.0 and 255.0

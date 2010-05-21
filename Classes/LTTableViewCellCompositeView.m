@@ -29,6 +29,11 @@
 #pragma mark -
 #pragma mark LTTableViewCellContentView Methods
 
++ (id)viewWithTableViewCell:(LTTableViewCell *)tableViewCell
+{
+	return [[[self alloc] initWithTableViewCell:tableViewCell] autorelease];
+}
+
 - (id)initWithTableViewCell:(LTTableViewCell *)tableViewCell;
 {
 	self = [super initWithFrame:CGRectZero];

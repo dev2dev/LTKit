@@ -15,7 +15,7 @@
 
 + (UIColor *)colorWithAbsoluteRed:(CGFloat)red green:(CGFloat)green blue:(CGFloat)blue
 {
-	return [[[UIColor alloc] initWithAbsoluteRed:red green:green blue:blue] autorelease];
+	return [[[self alloc] initWithAbsoluteRed:red green:green blue:blue] autorelease];
 }
 
 - (UIColor *)initWithAbsoluteRed:(CGFloat)red green:(CGFloat)green blue:(CGFloat)blue
