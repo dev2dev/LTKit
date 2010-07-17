@@ -50,7 +50,7 @@ I very strongly believe that good apps require beautiful, sensible design. Apple
 
 *Status: Work-in-progress*
 
-Table view cells that are heavy-laden with subviews, especially those that make use of transparency, result in choppy table view scrolling. While it is possible to composite subviews into a single subview using Core Graphics drawing, this is tedious and must be customized for each table view cell. Given certain (reasonable) constraints, it is possible to automate this compositing process using nibs as references for laying out these composited views.
+Table view cells that are heavy-laden with subviews, especially those that make use of transparency, result in choppy table view scrolling. While it is possible to composite subviews into a single subview using Core Graphics drawing, this is tedious and must be customized for each table view cell. Given certain (reasonable) constraints, it is possible to automate this compositing process using nibs as references for laying out these composited views. This technique is based on the information from a [blog post by atebits][8].
 
 #### Highlights ####
 
@@ -98,3 +98,4 @@ limitations under the License.
   [5]: http://www.apache.org/licenses/LICENSE-2.0 "http://www.apache.org/licenses/LICENSE-2.0"
   [6]: http://github.com/LucasTizma/LTKit/tree/master/Samples/FastTableViewCells/ "LTKit/Samples/FastTableViewCell"
   [7]: http://www.stack.nl/~dimitri/doxygen/ "Doxygen"
+  [8]: http://blog.atebits.com/2008/12/fast-scrolling-in-tweetie-with-uitableview/ "blog post by atebits"
