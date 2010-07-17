@@ -23,7 +23,7 @@ While I doubt this library will ever grow to the level of complexity of the Thre
 
 I very strongly believe that good apps require beautiful, sensible design. Apple is indisputably the king of aesthetics and design in the consumer technology industry. Their iPhone OS platform offers extremely powerful tools to really bring out the most in developers' apps. However, it can be extremely tedious to configure every minute detail of every view to make things look just right. **LTKit** aims to alleviate some of this tedium.
 
-## Goals ##
+## Purpose ##
 
 **LTKit** has some lofty goals. At this point, I don't even know how or if some of them will be achieved, but after all, what's the point (or fun) in making goals devoid of any challenge?
 
